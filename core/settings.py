@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 'rest_framework',
     'authwithgoogle',
+    'website',
     
     'django.contrib.sites',
     'allauth',

@@ -2,6 +2,7 @@
 <html lang="en">
 
     <head>
+        {% load static %}
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,7 +17,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
         <!-- Main CSS -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
 
     <body>
@@ -82,7 +83,7 @@
                 "jwt": {
                     category: "Authentication",
                     title: "JWT Authentication in Django",
-                    image: "images/JWT Authentication in Django.png",
+                    image: "{% static 'images/JWT Authentication in Django.png' %}",
 
                     content: `
                         <p>
@@ -127,7 +128,7 @@
                 "google-oauth": {
                     category: "Google OAuth",
                     title: "Google OAuth Authentication With Django",
-                    image: "images/Google OAuth Authentication with Django.png",
+                    image: "{% static 'images/Google OAuth Authentication with Django.png' %}",
 
                     content: `
                         <p>
@@ -173,7 +174,7 @@
                 "rest-api": {
                     category: "Django REST Framework",
                     title: "Building REST APIs With Django REST Framework",
-                    image: "images/Building REST APIs with Django REST Framework.png",
+                    image: "{% static 'images/Building REST APIs with Django REST Framework.png' %}",
 
                     content: `
                         <p>

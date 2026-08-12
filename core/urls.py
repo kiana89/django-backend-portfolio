@@ -19,6 +19,14 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('authwithgoogle.urls')),
+    path('', include('website.urls')),
+    path('auth', include('authwithgoogle.urls')),
     path('accounts/', include('allauth.urls')),
 ]
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
