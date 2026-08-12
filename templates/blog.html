@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Blog | Kiana</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<nav id="header-nav" class="navbar navbar-expand-lg container-fluid bg-white bg-opacity-75 py-4 fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/klogo (1).png" alt="Kiana logo">
+        </a>
+
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center align-items-center justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link pe-lg-5" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active pe-lg-5" href="blog.html">Blog</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link pe-lg-5" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-lg-4" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-lg-2">
+                        <a href="#" class="btn btn-dark px-4 py-2 rounded-pill signup-btn">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="padding-medium bg-light" style="margin-top: 95px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+                <p class="text-primary fw-semibold mb-2">BACKEND DEVELOPMENT</p>
+                <h1 class="display-3 fw-bold mb-4">Technical Blog</h1>
+                <p class="fs-5 mb-0">
+                    Practical articles about Python, Django, REST APIs, authentication,
+                    databases, and backend development.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="padding-medium">
+    <div class="container">
+        <div class="row g-5">
+
+            <div class="col-lg-4 col-md-6">
+                <article class="blog-post h-100">
+                    <div class="image-zoom rounded-3">
+                        <a href="single-post.html" class="blog-img">
+                            <img src="images/Building REST APIs with Django REST Framework.png"
+                                 alt="Building REST APIs with Django REST Framework"
+                                 class="img-fluid w-100 rounded-3">
+                        </a>
+                    </div>
+                    <div class="pt-4">
+                        <p class="text-primary mb-2">Django REST Framework</p>
+                        <h4><a href="single-post.html" class="blog-link">Building REST APIs with Django REST Framework</a></h4>
+                        <p>Learn how to design clean, scalable, and maintainable REST APIs using Django REST Framework.</p>
+                        <a href="single-post.html?post=rest-api" class="fw-semibold text-decoration-underline">Read Article</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <article class="blog-post h-100">
+                    <div class="image-zoom rounded-3">
+                        <a href="single-post.html" class="blog-img">
+                            <img src="images/JWT Authentication in Django.png"
+                                 alt="JWT Authentication in Django"
+                                 class="img-fluid w-100 rounded-3">
+                        </a>
+                    </div>
+                    <div class="pt-4">
+                        <p class="text-primary mb-2">Authentication</p>
+                        <h4><a href="single-post.html" class="blog-link">JWT Authentication in Django</a></h4>
+                        <p>Understand access tokens, refresh tokens, protected endpoints, and secure JWT authentication.</p>
+                        <a href="single-post.html?post=jwt" class="fw-semibold text-decoration-underline">Read Article</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <article class="blog-post h-100">
+                    <div class="image-zoom rounded-3">
+                        <a href="single-post.html" class="blog-img">
+                            <img src="images/Google OAuth Authentication with Django.png"
+                                 alt="Google OAuth Authentication with Django"
+                                 class="img-fluid w-100 rounded-3">
+                        </a>
+                    </div>
+                    <div class="pt-4">
+                        <p class="text-primary mb-2">Google OAuth</p>
+                        <h4><a href="single-post.html" class="blog-link">Google OAuth Authentication with Django</a></h4>
+                        <p>Add Google sign-in and sign-up to a Django application using OAuth and django-allauth.</p>
+                        <a href="single-post.html?post=google-oauth" class="fw-semibold text-decoration-underline">Read Article</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <article class="blog-post h-100">
+                    <div class="border rounded-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 270px;">
+                        <i class="bi bi-database text-primary" style="font-size: 85px;"></i>
+                    </div>
+                    <div class="pt-4">
+                        <p class="text-primary mb-2">Database</p>
+                        <h4><a href="single-post.html" class="blog-link">Working with Django ORM</a></h4>
+                        <p>A practical introduction to models, relationships, migrations, queries, and database operations.</p>
+                        <a href="single-post.html" class="fw-semibold text-decoration-underline">Read Article</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <article class="blog-post h-100">
+                    <div class="border rounded-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 270px;">
+                        <i class="bi bi-file-earmark-code text-primary" style="font-size: 85px;"></i>
+                    </div>
+                    <div class="pt-4">
+                        <p class="text-primary mb-2">API Documentation</p>
+                        <h4><a href="single-post.html" class="blog-link">Documenting Django APIs with Swagger</a></h4>
+                        <p>Create clear and interactive OpenAPI documentation for Django REST APIs using Swagger.</p>
+                        <a href="single-post.html" class="fw-semibold text-decoration-underline">Read Article</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <article class="blog-post h-100">
+                    <div class="border rounded-3 bg-light d-flex align-items-center justify-content-center" style="min-height: 270px;">
+                        <i class="bi bi-shield-check text-primary" style="font-size: 85px;"></i>
+                    </div>
+                    <div class="pt-4">
+                        <p class="text-primary mb-2">Security</p>
+                        <h4><a href="single-post.html" class="blog-link">Securing REST APIs in Django</a></h4>
+                        <p>Learn practical patterns for permissions, validation, authentication, and secure API development.</p>
+                        <a href="single-post.html" class="fw-semibold text-decoration-underline">Read Article</a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+        <nav class="mt-5 pt-4" aria-label="Blog pagination">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container padding-medium">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h3 class="display-3 fw-bold">Let’s Work Together</h3>
+                <p>Have a backend project in mind? Feel free to contact me.</p>
+
+                <ul class="d-flex gap-5 list-unstyled justify-content-center my-4">
+                    <li><a class="nav-link p-0" href="#" target="_blank"><i class="bi bi-instagram social-icon"></i></a></li>
+                    <li><a class="nav-link p-0" href="https://github.com/kiana89/django-smart-store" target="_blank"><i class="bi bi-github social-icon"></i></a></li>
+                    <li><a class="nav-link p-0" href="https://www.linkedin.com/in/kiana-asadaki-29a175276/" target="_blank"><i class="bi bi-linkedin social-icon"></i></a></li>
+                    <li><a class="nav-link p-0" href="#" target="_blank"><i class="bi bi-youtube social-icon"></i></a></li>
+                </ul>
+
+                <a href="index.html#contact" class="btn btn-outline-dark rounded-pill mt-3">Contact Me</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top border-dark-subtle py-4">
+        <div class="container d-md-flex justify-content-between align-items-center mt-3">
+            <p class="mb-0">© 2026 Kiana Asadaki. All rights reserved.</p>
+            <p class="mb-0">Backend Developer Portfolio</p>
+        </div>
+    </footer>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
