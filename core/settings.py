@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # 'rest_framework',
     'authwithgoogle',
     'website',
+    'collaborationrequest',
     
     'django.contrib.sites',
     'allauth',
